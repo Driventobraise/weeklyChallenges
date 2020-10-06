@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<hmtl lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <title>Find number of days between dates</title>
+    </head>
+
+    <body>
+
+        <script>
+            // setting dates to variables
+            var date1 = new Date("10/2/2020");
+            var date2 = new Date("11/2/2020");
+            //calcuates time differance between dates
+            var diffTime = date2.getTime() - date1.getTime();
+            //calcuates number of days between dates
+            var diffDays = diffTime / (1000 * 3600 * 24);
+
+            document.write("The number of days between <br>"+date1+ "<br>and<br>"+date2+ "<br>is:<br>"+diffDays);
+        </script>
+
+    </body>
+</hmtl>
